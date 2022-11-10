@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품페이지</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header(ver1.0.1).css">
+    <link rel="stylesheet" href="css/deal(ver1.0.0).css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/header(ver1.0.1).js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="content_area header_top">
+                <ul class="top_nav_ul">
+                    <!-- 로그인 페이지로 이동 -->
+                    <li><a href="#">LOGIN</a></li>
+                    <!-- 회원가입 페이지로 이동 -->
+                    <li><a href="#">JOIN</a></li>
+                    <!-- 위시리스트 내역 페이지로 이동 -->
+                    <li><a href="#">WISHLIST</a></li>
+                    <!-- 본인인증 후 / 마이페이지로 이동 -->
+                    <li><a href="#">MYPAGE</a></li>
+                    <li id="search_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
+                            <path d="M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9z"/>
+                            </svg>
+                    </li>
+                </ul>
+                <div class="search_box">
+                    <form action="" method="post"name="search">
+                        <input class="search_bar" type="text" name="search" placeholder="검색어를 입력해주세요.">
+                        <input class="search_btn" type="button" value="검색">
+                    </form>
+                </div>    
+                <!-- 로고 클릭시 메인페이지로 이동 -->
+                <a href="#"><div class="logo"><img src="img/logo_black.png" alt=""></div></a>
+            </div>
+            
+            <div class="header_bottom">
+                <div class="content_area">
+                    <ul class="bottom_nav_ul">
+                        <li>Furniture</li>
+                        <li>Lighting</li>
+                        <li>Kitchen</li>
+                        <li>Home Deco</li>
+                        <li>Hot Deal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu_box">
+                <div class="content_area o_f_hidden">
+                    <ul class="ul_category_box">
+                        <li class="li_Title">Furniture</li>
+                        <li class="li_content">
+                            <ul class="ca_box" onclick="location.href='#';">
+                                <li class="ca_txt">Boutique Furniture</li>
+                                <li class="ca_img"><img src="img/Furn1.png"></li>
+                            </ul>
+                            <ul class="ca_box" onclick="location.href='#';">
+                                <li class="ca_txt">Table & Dining</li>
+                                <li class="ca_img"><img src="img/Furn2.png"></li>
+                            </ul>
+                            <ul class="ca_box" onclick="location.href='#';">
+                                <li class="ca_txt">Chair</li>
+                                <li class="ca_img"><img src="img/Furn3.png"></li>
+                            </ul>
+                            <ul class="ca_box" onclick="location.href='#';">
+                                <li class="ca_txt">Sofa</li>
+                                <li class="ca_img"><img src="img/Furn4.png"></li>
+                            </ul>
+                            <ul class="ca_box" onclick="location.href='#';">
+                                <li class="ca_txt">Global Furniture</li>
+                                <li class="ca_img"><img src="img/Furn5.png"></li>
+                            </ul>
+                            <ul class="ca_box" onclick="location.href='#';">
+                                <li class="ca_txt">TV Stand & Storage</li>
+                                <li class="ca_img"><img src="img/Furn6.png"></li>
+                            </ul>
+                            <ul class="ca_box" onclick="location.href='#';">
+                                <li class="ca_txt">Small Furniture</li>
+                                <li class="ca_img"><img src="img/Furn7.png"></li>
+                            </ul>
+                            <ul class="ca_box" onclick="location.href='#';">
+                                <li class="ca_txt">Bed</li>
+                                <li class="ca_img"><img src="img/Furn8.png"></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="ul_category_box">
+                        <li class="li_Title">Lighting</li>
+                        <li class="li_content"></li>
+
+                    </ul>
+                    <ul class="ul_category_box">
+                        <li class="li_Title">Kitchen</li>
+                        <li class="li_content"></li>
+
+                    </ul>
+                    <ul class="ul_category_box">
+                        <li class="li_Title">Home Deco</li>
+                        <li class="li_content"></li>
+
+                    </ul>
+                    <ul class="ul_category_box">
+                        <li class="li_Title">Hot Deal</li>
+                        <li class="li_content"></li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>   
+<!-- ------------------------------------------------------------- -->
+
+        <main class="main">
+            <div class="contents_area">
+                <div class="sub_category">
+                    <div>거실</div>
+                    <div>></div>
+                    <div>쇼파</div>
+                    <div>></div>
+                    <div>4인</div>
+                </div>
+                <div class="product">
+                    <div class="img_box">
+                        <input type="radio" name="rd" id="rd1" checked>  
+                        <input type="radio" name="rd" id="rd2">          
+                        <div class="big_img">
+                            <div class="img"><img src="img/Furn1.png" alt="쇼파"></div>
+                            <div class="img"><img src="img/Furn2.jpg" alt="쇼파"></div>
+                        </div>
+                        <div class="color_btn_box">
+                            <label for="rd1" class="color_btn" id="beige"></label>
+                            <label for="rd2" class="color_btn" id="gray"></label>
+                        <!-- <div class="color_btn" id="beige"></div>
+                             <div class="color_btn" id="gray"></div> -->
+                        </div>
+                    </div>    
+                    <div class="info_box">
+                        <h3>샘플상품</h3>
+                        <hr>
+                        <div class="info">
+                            <table>
+                                 <tr>
+                                    <td class="title"><h4>상품명</h4></td>
+                                    <td class="contents"><h4>샘플상품</h4></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="title">상품요약정보</td>
+                                    <td class="contents">간단한 내용</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="title">소비자가</td>
+                                    <td class="contents"><del>10,000원</del></td>
+                                 </tr>
+                                 <tr id="blue">
+                                    <td class="title">판매가</td>
+                                    <td class="contents">8,000원</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="title">국내,해외배송</td>
+                                    <td class="contents">국내배송</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="title">배송방법</td>
+                                    <td class="contents">택배</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="title">배송비</td>
+                                    <td class="contents">
+                                        <select name="send">
+                                            <option value="ppay">주문시 결제(선결제)</option>
+                                            <option value="dpay">수령시 결제(착불)</option>
+                                        </select>
+                                    </td>
+                                 </tr>
+                            </table>
+                            <hr>
+                            <p>(최소주문수량 1개 이상)</p>
+                            <br>
+                            <p id="red">수량을 결정하세요!</p>
+                            <div class="underline"></div>
+                            <br><br>
+                            총 상품금액(수량): <div class="ac">39,000원</div> (1개)
+                            <hr>
+                            <div class="btn_box">
+                                <div>BUY NOW</div>
+                                <div>ADD CART</div>
+                                <div>WISH LIST</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="big_underline"></div>
+                </div>
+                <div class="extend_page">
+                    <p>상품 상세 페이지</p>
+                    <div class="extend_img_box">
+                        <div><img src="./sofa_page_1.webp" alt=""></div>
+                        <div><img src="./sofa_page_2.webp" alt=""></div>
+                        <div><img src="./sofa_page_3.webp" alt=""></div>
+                        <div><img src="./sofa_page_4.webp" alt=""></div>
+                    </div>
+                </div>
+                <input type="radio" name="rd2" class="radio" id="rad1" checked>
+                <input type="radio" name="rd2" class="radio" id="rad2">
+                <input type="radio" name="rd2" class="radio" id="rad3">
+                <input type="radio" name="rd2" class="radio" id="rad4">
+                <div class="tap_btn">
+                    <label for="rad1">상품후기</label>
+                    <label for="rad2">상품문의</label>
+                    <label for="rad3">배송안내</label>
+                    <label for="rad4">교환/반품정책</label>
+                </div>
+                <div class="tap_box">
+                    <div>
+                        <h3>상품후기</h3>
+                    </div>
+                    <div>
+                        <h3>상품문의</h3>
+                    </div>
+                    <div>
+                        <h3>배송안내</h3>
+                    </div>
+                    <div>
+                        <h3>교환/반품정책</h3>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

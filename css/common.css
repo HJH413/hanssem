@@ -1,0 +1,24 @@
+body{margin: 0;}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.content_area{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+    /* background-color: hotpink; */
+}

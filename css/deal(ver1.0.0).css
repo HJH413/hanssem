@@ -1,0 +1,216 @@
+.main{
+    width: 100%;
+    /* height: 1000px; */
+    /* background-color: aquamarine; */
+}
+.sub_category{
+    width: 100%;
+    margin-top: 50px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: left;
+    
+    font-size: 12px;
+}
+.sub_category > div {
+    padding: 5px 10px;
+}
+.product{
+    width: 100%;
+    height: 700px;
+    /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img_box{
+    width: 45%;
+    height: 100%;
+}
+input[ name = rd] {
+    display: none;
+}
+.big_img{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+.img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+#rd1:checked ~ .big_img > .img:nth-child(1),
+#rd2:checked ~ .big_img > .img:nth-child(2) {
+    opacity: 1;
+}
+.color_btn_box{
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+}
+.color_btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 20px;
+    cursor: pointer;
+}
+#beige{
+    background-color: rgb(201, 201, 160);
+}
+#gray{
+    background-color: gray;
+} 
+.info_box{
+    width: 45%;
+    /* background-color: aqua; */
+    font-size: 13px;
+}
+table tr > .contents{
+    padding-left: 20px;
+}
+h3{
+    padding: 0;
+    margin: 0;
+}
+h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+#red{
+    color: red;
+}
+#blue{
+    color: blue;
+}
+select{
+    outline: none;
+}
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.ac{
+    display: inline;
+    font-size: 24px;
+    font-weight: 900;
+}
+.btn_box{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-size: 18px;
+    color: #434343;
+    font-weight: 900;
+    text-align: center;
+   line-height: 50px;
+    justify-content: space-evenly;
+}
+.btn_box > div:nth-child(1) {
+    font-size: 24px;
+    color: #fff;
+    background-color: #434343;
+    border: 1px solid;
+    box-sizing: border-box;
+    padding:0 30px;    
+}
+.btn_box > div:nth-child(2) {
+    border: 1px solid #cacaca;
+    box-sizing: border-box;
+    padding:0 20px;
+}
+.btn_box > div:nth-child(3) {
+    border: 1px solid #cacaca;
+    box-sizing: border-box;
+    padding:0 20px;
+}
+.big_underline{
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    box-shadow: 0 2px 4px 2px rgb(0 0 0 / 0.3);
+}
+.extend_page{
+    width: 100%;
+    /* background-color: pink; */
+}
+.extend_img_box{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+.extend_page > p{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+.radio{
+    display: none;
+}
+.tap_btn{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 30px;
+}
+.tap_btn >label{
+    width: calc(100% / 4);
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    color: rgb(134, 134, 134);
+    display: block;
+    cursor: pointer;
+}
+#rad1:checked ~ .tap_btn label:nth-child(1),
+#rad2:checked ~ .tap_btn label:nth-child(2),
+#rad3:checked ~ .tap_btn label:nth-child(3),
+#rad4:checked ~ .tap_btn label:nth-child(4) {
+    color: #000;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: none;
+}
+.tap_box{        
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+.tap_box > div {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    display: none;
+}
+.tap_box > div >h3 {
+    padding: 10px 15px;
+}
+
+#rad1:checked ~ .tap_box div:nth-child(1),
+#rad2:checked ~ .tap_box div:nth-child(2),
+#rad3:checked ~ .tap_box div:nth-child(3),
+#rad4:checked ~ .tap_box div:nth-child(4) {
+    display: block;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #1a1a1a;
+}
